@@ -1,0 +1,27 @@
+elephant-twin-lzo
+Copyright 2012 Twitter, Inc.
+
+This software depends on a number of open-source projects available under
+the APLv2 license, as well as their respective dependencies. However, 
+we depend on hadoop-lzo which is under the GPLv3 and you should be aware of
+the issue when it comes to distributing APLv2 and GPLv3 code.
+
+The Free Software Foundation considers the Apache License, Version 2.0 to be a 
+free software license, compatible with version 3 of the GPL. The Software Freedom Law Center 
+provides practical advice for developers about including permissively licensed source.
+
+Apache 2 software can therefore be included in GPLv3 projects, because the GPLv3 license 
+accepts our software into GPLv3 works. However, GPLv3 software cannot be included in 
+Apache projects. The licenses are incompatible in one direction only, and it is a 
+result of ASF's licensing philosophy and the GPLv3 authors' interpretation of copyright law.
+
+This licensing incompatibility applies only when some Apache project software becomes 
+a derivative work of some GPLv3 software, because then the Apache software would have 
+to be distributed under GPLv3. This would be incompatible with ASF's requirement that 
+all Apache software must be distributed under the Apache License 2.0.
+
+We avoid GPLv3 software because merely linking to it is considered by the GPLv3 
+authors to create a derivative work. We want to honor their license. Unless 
+GPLv3 licensors relax this interpretation of their own license regarding linking, 
+our licensing philosophies are fundamentally incompatible. This is an identical 
+issue for both GPLv2 and GPLv3.
