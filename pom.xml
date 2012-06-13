@@ -63,6 +63,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <slf4j.version>1.6.4</slf4j.version>
     <apache.pig.version>0.10.0</apache.pig.version>
+    <test.data.dir>${project.build.directory}/testdata</test.data.dir>
   </properties>
   
   <dependencies>
