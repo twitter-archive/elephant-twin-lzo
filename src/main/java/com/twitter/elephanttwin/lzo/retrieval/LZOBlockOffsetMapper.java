@@ -12,7 +12,7 @@
  * GNU General Public License for more details.
  *
  * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>. 
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 package com.twitter.elephanttwin.lzo.retrieval;
 
@@ -32,6 +32,7 @@ import org.apache.log4j.Logger;
 
 import com.hadoop.compression.lzo.LzoIndex;
 import com.twitter.elephantbird.mapreduce.io.BinaryWritable;
+import com.twitter.elephanttwin.indexing.BlockIndexingMapper;
 import com.twitter.elephanttwin.io.LongPairWritable;
 import com.twitter.elephanttwin.io.TextLongPairWritable;
 import com.twitter.elephanttwin.retrieval.BlockIndexedFileInputFormat;
@@ -48,8 +49,7 @@ import com.twitter.elephanttwin.retrieval.BlockIndexedFileInputFormat;
  * on column values then on start offsets.
  */
 
-public class LZOBlockOffsetMapper<M> extends
-Mapper<LongWritable, BinaryWritable<M>, TextLongPairWritable, LongPairWritable> {
+public class LZOBlockOffsetMapper<M> extends BlockIndexingMapper<LongWritable, BinaryWritable<M>> {
 
   public static String CLASSNAME_CONF = "LZOBlockOffsetMapper.classname";
   public static String COLUMNNAME_CONF = "LZOBlockOffsetMapper.columnename";
